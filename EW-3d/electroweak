@@ -1,0 +1,201 @@
+*---------------
+* fields
+*---------------
+
+* higgs + GBs
+
+  [h,h,+]
+  [gZ,gZ,+]
+  [gWM,gWP,+]
+
+* photon, Z-boson, W-boson
+
+  [A0,A0,+]
+  [Ai,Ai,+]
+  [Z0,Z0,+]
+  [Zi,Zi,+]
+  [W0M,W0P,+]
+  [WiM,WiP,+]
+
+* ghosts
+
+  [cA,CA,-]
+  [cZ,CZ,-]
+  [cWP,CWP,-]
+  [cWM,CWM,-]
+
+*---------------
+* interactions
+*---------------
+
+*** triple vertices ****
+
+* temporal-scalar
+
+  [Z0,Z0,h]
+  [Z0,A0,h]
+  [A0,A0,h]
+  [W0M,W0P,h]
+
+  [gWP,W0M,Z0]
+  [gWM,W0P,Z0]
+  [gWP,W0M,A0]
+  [gWM,W0P,A0]
+
+* scalar sector
+
+  [h,h,h]
+  [gZ,gZ,h]
+  [gWP,gWM,h]
+
+* temporal-spatial
+
+  [Z0,WiM,W0P]
+  [Z0,WiP,W0M]
+  [A0,WiM,W0P]
+  [A0,WiP,W0M]
+
+  [Zi,W0M,W0P]
+  [Ai,W0M,W0P]
+
+* spatial gauge fields
+
+  [WiP,WiM,Zi]
+  [WiP,WiM,Ai]
+
+* spatial-scalar
+
+  [Zi,gWP,gWM]
+  [Zi,h,gZ]
+  [Ai,gWP,gWM]
+  [WiP,gWM,h]
+  [WiM,gWP,h]
+  [WiP,gWM,gZ]
+  [WiM,gWP,gZ]
+
+  [WiP,gWM,Zi]
+  [WiM,gWP,Zi]
+  [WiP,gWM,Ai]
+  [WiM,gWP,Ai]
+
+  [WiM,WiP,h]
+  [Zi,Zi,h]
+
+* ghosts
+
+  [CWP,cWP,Ai]
+  [CWM,cWM,Ai]
+  [CWP,cWP,Zi]
+  [CWM,cWM,Zi]
+
+  [CZ,cWP,WiP]
+  [CZ,cWM,WiM]
+  [CA,cWP,WiP]
+  [CA,cWM,WiM]
+
+  [CWM,cZ,WiP]
+  [CWP,cZ,WiM]
+  [CWM,cA,WiP]
+  [CWP,cA,WiM]
+
+  [CWP,cWP,h]
+  [CWM,cWM,h]
+  [CZ,cZ,h]
+
+  [CWP,cWP,gZ]
+  [CWM,cWM,gZ]
+
+  [CWM,cZ,gWP]
+  [CWP,cZ,gWM]
+  [CZ,cWP,gWP]
+  [CZ,cWM,gWM]
+  [CWM,cA,gWP]
+  [CWP,cA,gWM]
+
+
+*** quartic vertices ***
+
+* temporal-scalar
+
+  [gWP,gWM,Z0,Z0]
+  [gWP,gWM,A0,Z0]
+  [gWP,gWM,A0,A0]
+  [gZ,gZ,Z0,Z0]
+  [gZ,gZ,A0,Z0]
+  [gZ,gZ,A0,A0]
+
+  [W0P,W0M,gZ,gZ]
+  [W0P,W0M,gWP,gWM]
+  [W0P,W0M,h,h]
+
+  [Z0,Z0,h,h]
+  [A0,Z0,h,h]
+  [A0,A0,h,h]
+
+  [W0P,gWM,h,Z0]
+  [W0M,gWP,h,Z0]
+  [W0P,gWM,h,A0]
+  [W0M,gWP,h,A0]
+
+  [W0P,gWM,gZ,Z0]
+  [W0M,gWP,gZ,Z0]
+  [W0P,gWM,gZ,A0]
+  [W0M,gWP,gZ,A0]
+
+* scalar sector
+
+  [gWP,gWM,h,h]
+  [gWP,gWM,gZ,gZ]
+  [gZ,gZ,h,h]
+  [h,h,h,h]
+  [gWP,gWM,gWP,gWM]
+  [gZ,gZ,gZ,gZ]
+
+* temporal-spatial
+
+  [Z0,Z0,WiP,WiM]
+  [A0,A0,WiP,WiM]
+  [Z0,A0,WiP,WiM]
+  [W0P,W0M,WiP,WiM]
+  [W0P,W0P,WiM,WiM]
+  [W0M,W0M,WiP,WiP]
+
+  [W0P,W0M,Zi,Zi]
+  [W0P,W0M,Ai,Ai]
+  [W0P,W0M,Ai,Zi]
+
+  [W0P,Z0,WiM,Zi]
+  [W0M,Z0,WiP,Zi]
+  [W0P,Z0,WiM,Ai]
+  [W0M,Z0,WiP,Ai]
+
+* spatial
+
+  [WiP,WiM,Zi,Zi]
+  [WiP,WiM,Ai,Ai]
+  [WiP,WiM,Ai,Zi]
+  [WiP,WiP,WiM,WiM]
+
+* spatial-scalar
+
+  [Zi,Zi,h,h]
+  [Zi,Zi,gZ,gZ]
+  [Zi,Zi,gWP,gWM]
+  [Ai,Ai,gWP,gWM]
+
+  [WiP,WiM,h,h]
+  [WiP,WiM,gZ,gZ]
+  [WiP,WiM,gWP,gWM]
+
+  [WiP,Zi,h,gWM]
+  [WiM,Zi,h,gWP]
+  [WiP,Zi,gZ,gWM]
+  [WiM,Zi,gZ,gWP]
+
+  [WiP,Ai,h,gWM]
+  [WiM,Ai,h,gWP]
+  [WiP,Ai,gZ,gWM]
+  [WiM,Ai,gZ,gWP]
+
+  [Zi,Ai,gWM,gWP]
+
