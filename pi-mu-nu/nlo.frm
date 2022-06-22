@@ -16,14 +16,20 @@ local Diag2 = ( d_(al,be) + xi*r(al)*r(be)*prop(r) )*
               g_(2,mu,-p,nu,l,al,q,be,l)*
               prop(p)*prop(q)*prop(r)*prop(l)^2;
 
-local PI = Diag1 + 2*Diag2;
+local Diag3 = ( d_(al,be) + xi*r(al)*r(be)*prop(r) )*
+              g_(3,mu,q,nu,v,al,-p,be,v)*
+              prop(p)*prop(q)*prop(r)*prop(v)^2;
+
+
+local PI = Diag1 + Diag2 + Diag3;
 .sort
 
-drop Diag1, Diag2;
+drop Diag1, Diag2, Diag3;
 local PMN = d_(mu,nu)*PI;
 local P00 = d_(0,mu)*d_(0,nu)*PI;
 tracen,1;
 tracen,2;
+tracen,3;
 id prop(p?) = 1/p.p;
 .sort
 
